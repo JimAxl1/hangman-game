@@ -1,0 +1,121 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3.2rem 2.5rem;
+    align-items: center;
+}
+
+.back{
+    border-radius: 999px;
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(to bottom, #fe71fe, #db80ff, #b68cff, #9294ff, #7199ff);
+    box-shadow: inset 0rem -0.5rem 0rem -0.1rem rgba(157, 45, 245, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 1.7rem;
+    height: 1.6rem;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    -webkit-text-stroke-width: 4;
+    -webkit-text-stroke-color: #243041;
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 2.4px;
+    margin: 0rem;
+    background: linear-gradient(180deg, #67B6FF 16.42%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.5rem;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        padding: 6rem 4rem;
+    }
+
+    .back{
+        width: 6.4rem;
+        height: 6.4rem;
+        box-shadow: inset 0rem -0.5rem 0rem 0.7rem rgba(157, 45, 245, 0.25);
+    }
+
+    .image{
+        width: 2.8rem;
+        height: 2.6rem;
+        top: -0.5rem;
+    }
+
+    .title{
+        font-size: 10.4rem;
+    }
+
+    .main{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 47.5% 47.5%;
+        gap: 3.2rem;
+        padding: 4rem 4.8rem 4rem 4rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header{
+        padding: 8rem 4rem;
+        margin: auto;
+        max-width: 129.2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back{
+        position: absolute;
+        left: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 9.4rem;
+        height: 9.4rem;
+        &:hover{
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), linear-gradient(to bottom, #fe71fe, #db80ff, #b68cff, #9294ff, #7199ff);
+        }
+    }
+
+    .image{
+        width: 4.1rem;
+        height: 3.8rem;
+    }
+
+    .title{
+        font-size: 13.6rem;
+    }
+
+    .main{
+        padding: 8rem 4rem;
+        margin: auto;
+        max-width: 129.2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: auto auto;
+        grid-template-columns: 31.5% 31.5% 31.5%;
+        row-gap: 5rem;
+        column-gap: 3.2rem;
+    }
+}

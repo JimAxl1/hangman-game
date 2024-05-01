@@ -1,0 +1,118 @@
+.main{
+    height: 100%;
+    margin: auto 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border-radius: 4.8rem;
+    background: linear-gradient(180deg, #344ABA 0%, rgba(0, 20, 121, 0.83) 100%);
+    box-shadow: inset 0rem 0.6rem 0rem 0.2rem #3C74FF, 0rem 1rem 0rem 0.4rem #140E66;
+    height: 48.1rem;
+    width: 100%;
+    padding: 6.4rem 3.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 4rem;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 10rem;
+    background: linear-gradient(180deg, #FE71FE 16.42%, #7199FF 100%);
+    box-shadow: inset 0rem -1.5rem 0rem 0.6rem #9D2DF5, 0rem 0.4rem 0rem 0.6rem #243041;
+    margin: auto;
+}
+
+.logo{
+    position: absolute;
+    top: -5rem;
+    width: 25rem;
+    height: 11.6rem;
+}
+
+.image{
+    width: 5.3rem;
+    height: 5rem;
+    position: relative;
+}
+
+.containerLink{
+    border-radius: 4rem;
+    background: #2463FF;
+    box-shadow: inset 0.1rem 0.6rem 0rem 0.3rem #3C74FF, 0rem 0.2rem 0rem 0.4rem #140E66;
+    padding: 1.2rem;
+    width: 100%;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+.link{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.instructions{
+    color: #FFF;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 120%;
+    letter-spacing: 0.16rem;
+    margin: 0rem;
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin: auto 8.8rem;
+    }
+
+    .containerLink{
+        max-width: 26rem;
+    }
+
+    .container{
+        height: 50rem;
+        padding-bottom: 5rem;
+        padding-top: 8.8rem;
+    }
+
+    .play{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .logo{
+        width: 37.3686rem;
+        height: 18.5rem;
+        top: -10rem;
+    }
+
+    .image{
+        width: 6.6rem;
+        height: 6.26rem
+    }
+}
+
+@media screen and (min-width: 992px){
+    .main{
+        margin: auto;
+        max-width: 59.2rem;
+    }
+
+    .play:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), linear-gradient(180deg, #FE71FE 16.42%, #7199FF 100%);
+    }
+
+    .containerLink:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), #2463FF;
+    }
+}

@@ -1,0 +1,145 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4.5rem 2.5rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.pause{
+    border-radius: 999px;
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(to bottom, #fe71fe, #db80ff, #b68cff, #9294ff, #7199ff);
+    box-shadow: inset 0rem -0.5rem 0rem -0.1rem rgba(157, 45, 245, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    .image{
+        position: relative;
+        width: 1.6rem;
+        height: 1.4rem;
+    }
+}
+
+.category{
+    color: #FFF;
+    font-size: 4rem;
+    line-height: 120%; 
+    letter-spacing: -0.2px;
+    margin: 0rem;
+}
+
+.health{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+    .image{
+        width: 2.6rem;
+        height: 2.4rem;
+        position: relative;
+    }
+}
+
+.bgprogress{
+    display: flex;
+    align-items: center;
+    width: 5.7rem;
+    height: 1.6rem;
+    padding: 0.4rem;
+    background-color: #FFF;
+    border-radius: 9.6rem;
+}
+
+.progressBar{
+    height: 0.8rem;
+    border-radius: 9.6rem;
+    background-color: #261676;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        padding: 6rem 4rem;
+    }
+
+    .menu{
+        gap: 3.2rem;
+    }
+
+    .pause{
+        width: 6.4rem;
+        height: 6.4rem;
+        box-shadow: inset 0rem -0.5rem 0rem 0.7rem rgba(157, 45, 245, 0.25);
+        .image{
+            width: 2.6rem;
+            height: 2.2rem;
+        }
+    }
+
+    .category{
+        font-size: 4.8rem;
+    }
+
+    .health{
+        gap: 4rem;
+        .image{
+            width: 5.3rem;
+            height: 4.9rem;
+        }
+    }
+
+    .bgprogress{
+        width: 16rem;
+        height: 3.1rem;
+        padding: 0.9rem 1.1rem;
+    }
+
+    .progressBar{
+        height: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header{
+        padding: 6rem 4rem;
+        margin: auto;
+        max-width: 129.2rem;
+    }
+
+    .menu{
+        gap: 5.7rem;
+    }
+
+    .pause{
+        width: 9.4rem;
+        height: 9.4rem;
+        .image{
+            width: 3.8rem;
+            height: 3.2rem;
+        }
+        &:hover{
+            cursor: pointer;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), linear-gradient(to bottom, #fe71fe, #db80ff, #b68cff, #9294ff, #7199ff);
+        }
+    }
+
+    .category{
+        font-size: 8.8rem;
+    }
+
+    .health{
+        gap: 4rem;
+    }
+
+    .bgprogress{
+        width: 24rem;
+    }
+}

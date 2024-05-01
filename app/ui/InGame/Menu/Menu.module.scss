@@ -1,0 +1,114 @@
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(26, 4, 58, 0.75) 0%, rgba(21, 18, 120, 0.75) 70.31%, rgba(43, 22, 119, 0.75) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    z-index: 1;
+}
+
+.modal_content{
+    border-radius: 4.8rem;
+    background: linear-gradient(180deg, #344ABA 0%, rgba(0, 20, 121, 0.83) 100%);
+    box-shadow: 0rem 0.6rem 0rem 0.8rem #2463FF inset, 0rem -0.8rem 0rem 0.4rem #140E66 inset;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.title{
+    text-align: center;
+    -webkit-text-stroke-width: 8;
+    -webkit-text-stroke-color: #243041;
+    font-size: 9.4rem;
+    line-height: 120%;
+    letter-spacing: -0.047rem;
+
+    background: linear-gradient(180deg, #67B6FF 16.42%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0rem;
+    position: absolute;
+    top: -5rem;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.4rem;
+    margin-top: 10.4rem;
+    margin-bottom: 8.7rem;
+}
+
+.button{
+    padding: 1.2rem 6.4rem;
+    border-radius: 4rem;
+    background: #2463FF;
+    box-shadow: inset 0.1rem 0.6rem 0rem 0.3rem #3C74FF, 0rem 0.2rem 0rem 0.4rem #140E66;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 120%;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.quit{
+    padding: 1.2rem 6.4rem;
+    border-radius: 4rem;
+    background: linear-gradient(180deg, #FE71FE 16.42%, #7199FF 100%);
+    box-shadow: inset 0.1rem 0.6rem 0rem 0.3rem #C642FB, 0rem 0.2rem 0rem 0.4rem #140E66;
+    color: #FFF;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 120%;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    .modal{
+        padding: 8.8rem;
+    }
+
+    .modal_content{
+        border-radius: 7.2rem;
+        max-width: 59.2rem;
+    }
+
+    .title{
+        font-size: 13.4rem;
+        top: -9rem;
+    }
+
+    .container{
+        margin-top: 12rem;
+        margin-bottom: 7.1rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .button{
+        &:hover{
+            cursor: pointer;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), #2463FF;
+        }
+    }
+
+    .quit{
+        &:hover{
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), linear-gradient(180deg, #FE71FE 16.42%, #7199FF 100%);
+        }
+    }
+}

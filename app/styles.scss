@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url('/assets/images/background-mobile.svg');
+    background-size: cover;
+    margin: 0rem;
+    height: 100vh;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: url('/assets/images/background-tablet.svg');
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-image: url('/assets/images/background-desktop.svg');
+    }
+}
