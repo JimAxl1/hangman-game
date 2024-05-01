@@ -10,7 +10,7 @@ import { selectTitle } from '../redux/features/titleSlice'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation';
 
-export default function page(){
+export default function Page(){
   const game = useAppSelector((state) => state.titleReducer)
   const allGames = useAppSelector((state) => state.gameReducer)
   const dispatch = useAppDispatch()

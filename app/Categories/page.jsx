@@ -4,7 +4,7 @@ import { mouse_memoirs } from '../ui/fonts'
 import styles from './page.module.scss'
 import CategoriesList from '../ui/Categories/CategoriesList'
 
-export default function page(){
+export default function Page(){
   return(
     <>
       <header className={styles.header}>
